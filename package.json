@@ -1,0 +1,50 @@
+{
+  "name": "dsh-poor-router",
+  "version": "1.0.0",
+  "description": "Budget-LLM pool router for DeepSeek Harness: usage ledger, health tracking, Thompson-sampling adaptive failover across free-tier models, quality tier ladder, executor pool, paid-guard, web panel + reroute badge. 穷鬼路由器。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "cordis",
+    "deepseek-harness",
+    "llm",
+    "router",
+    "llm-router",
+    "failover",
+    "free-tier",
+    "model-pool",
+    "thompson-sampling"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yishengdaxiaonengjihui/dsh-poor-router.git"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-web-react"
+      ]
+    }
+  }
+}

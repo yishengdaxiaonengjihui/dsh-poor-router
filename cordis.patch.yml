@@ -1,0 +1,13 @@
+# dsh-poor-router bundle layer: mount the poor-router pool plugin (host + web client).
+#
+# Data files default to <cwd>/poor-router/{pool,state}.json. Point it anywhere by
+# adding your own row in the profile's cordis.patch.yml (later layers win per row):
+#
+#   - id: poor-router
+#     name: dsh-poor-router
+#     config:
+#       dataDir: 'D:/somewhere/poor-router'
+#
+- insert:
+    - id: poor-router
+      name: dsh-poor-router
