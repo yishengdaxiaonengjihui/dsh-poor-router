@@ -4,6 +4,16 @@
 
 [中文文档](README.zh.md)
 
+## Screenshots
+
+The settings-page dashboard — routing / adaptive / badge toggles, live stat chips, availability ranking (posterior mean × latency penalty), provider-grouped collapsible ledger (expand any row to edit expiry / grant / quality tier inline):
+
+![poor-router settings dashboard](docs/panel.png)
+
+The ⚡ reroute badge at the left of the input box — shows where the most recent request was actually served and why (e.g. `aux-explore` exploration), hover for details, dims after ten minutes:
+
+![input-box reroute badge](docs/badge.png)
+
 ## The Broke Manifesto
 
 This plugin is built for the broke. **If you can afford API bills, walk away.**
